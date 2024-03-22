@@ -140,6 +140,7 @@ body {
     margin-bottom: 3vh;
     border: 0.5lvh solid #515151;
     flex-shrink: 1;
+    width: 60vw;    
 }
 
 .who > p {
@@ -180,14 +181,11 @@ body {
 
 .fin-container1 > ul > li{
     background-color: #f2f2f2;
-    width: 25vw;
-    height: 35vh;
+    padding: 3vh 3vw 0vh 3vw;
     border-radius: 20px;
     margin-bottom: 3vh;
     border: 0.5lvh solid #515151;
     flex-shrink: 1;
-
-
 }
 
 .fin-container img{
@@ -196,7 +194,6 @@ body {
     margin-top: 2vh;
     border-radius: 25px;
     border: 0.5vh solid #515151;
-
 }
 
 footer > div{
@@ -271,7 +268,13 @@ footer > div{
     }
 
     .fin-container1 > ul > li{
-        width: 50vw;
+        width: 60vw;
+        
+    }
+
+    .fin-container img{
+        width:30vw;
+        height: 30vw;
     }
 
     footer > div{
