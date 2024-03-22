@@ -4,6 +4,7 @@ body {
     text-align: center;
     width: 100vw;
     background-color: #59D5E0;
+    color:#515151;
 }
 
 .top-container {
@@ -16,7 +17,7 @@ body {
     color: #F5DD61;
 }
 
-.top-container p {
+.top-container > p {
     color: #FAA300;
     font-style: bold;
     margin: 0;
@@ -58,6 +59,7 @@ body {
     width: 20vw;
     grid-area: 3 / 6 / 4 / 7;    
 }
+
 .mountain {
     grid-area: 6 / 1 / 7 / 7;
     width: 100%;
@@ -72,54 +74,72 @@ body {
     border-radius: 50%;
 }
 
-.divisor{
-    height: 10vh;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-}
-
 .whotext{
+    display: flex;
+    flex-direction: row-reverse;
     position: relative;
     background-color: #59D5E0;
-    height: 10vh;
+    height: 17vh;
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 0;
 }
 
-.whotext > div > h3{
-    position: absolute;
-    width: 23vw;
-    height: 17vh;
-    right: 20vw;
-    color: #515151;   
+.cloudwho {
+    position: relative;
+    width: 25em;
 }
 
-.cloudwho {
+.cloudwho > img{
     position: absolute;
-    right: 20vw;
-    top: -2vh;
-    height: 13vh;
-    width: 25vw;
+    right: 8em;
+}
+
+.cloudwho > h3{
+    position: absolute;
+    width: 20em;
+    color: #515151;
+    top: 4vh;
+    right: 3em;
+}
+
+.cloudwho2 {
+    position: relative;
+    width: 25em;
+}
+
+.cloudwho2 > img{
+    position: absolute;
+    right: 20em;
+}
+
+.cloudwho2 > h3{
+    position: absolute;
+    inset: unset;
+    width: 20em;
+    color: #515151;
+    top: 4vh;
+    right: 14em;
 }
 
 .mid-container {
-    padding: 10vh;
+    padding: 10vh 10vw 0vh 10vw;
     background-color: #59D5E0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 5vh;
+    gap: 5vw;
     align-items: center;
+
 }
 
 .who {
-    width:70vw;
-    padding: 3vh;
+    padding: 3vh 3vw 0vh 3vw;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     border: 0.5lvh solid #515151;
+    flex-shrink: 1;
 }
 
 .who > p {
@@ -134,15 +154,106 @@ body {
     height: 10vw;
 }
 
-@media (max-width: 700px) {
+.fin-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+
+
+}
+
+.fin-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+
+}
+.fin-container1 > ul{
+    padding: 3vh 3vw 0vh 3vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.fin-container1 > ul > li{
+    background-color: #f2f2f2;
+    width: 25vw;
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 3vh;
+    border: 0.5lvh solid #515151;
+    flex-shrink: 1;
+
+
+}
+
+.fin-container img{
+    width: 20vw;
+    height: 20vh;
+    margin-top: 2vh;
+    border-radius: 25px;
+    border: 0.5vh solid #515151;
+
+}
+
+footer > div{
+    background-color: #f2f2f2;
+    color:#515151;
+    height: 20vh;
+    width: 100vw;
+    margin-top: 9vh;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width:770px) {
     .title{
-        grid-area: 4 / 2 / 5 / 7;
-        font-size: medium;
+        grid-area: 4 / 1 / 5 / 7;
+        font-size: small;
+        padding: 0;
+        margin: 0 1vw 0 0;
     }
 
-    .cloudwho{
-        height: 12vh;
-        width: 28vw;
+    .tittle > h1{
+        font-size: xx-small;
+    }
+
+    .cloudwho {
+        right: 13em;
+        height: 13vh;
+        width: 10em;
+    }
+
+    .cloudwho > h3{
+        left: 6em;
+        width: 10em;
+    }
+
+    .cloudwho > img{
+        position: absolute;
+        right: -10em;
+    
+    }
+
+    .cloudwho2 {
+        right: 13em;
+        height: 13vh;
+        width: 10em;
+    }
+
+    .cloudwho2 > h3{
+        left: 6em;
+        width: 10em;
+    }
+
+    .cloudwho2 > img{
+        position: absolute;
+        right: -10em;
+    
     }
 
     .mid-container {
@@ -154,4 +265,18 @@ body {
         width: 20vw;
         height: 20vw;
     }
+
+    .fin-container1 > ul{
+        flex-direction: column;
+    }
+
+    .fin-container1 > ul > li{
+        width: 50vw;
+    }
+
+    footer > div{
+        flex-direction: column;
+    }
+
 }
+
