@@ -130,7 +130,6 @@ body {
     justify-content: space-around;
     gap: 5vw;
     align-items: center;
-
 }
 
 .who {
@@ -159,8 +158,6 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 3vh;
-
-
 }
 
 .fin-container1{
@@ -169,7 +166,6 @@ body {
     justify-content: center;
     align-items:center;
     width: 100vw;
-
 }
 .fin-container1 > ul{
     padding: 3vh 3vw 0vh 3vw;
@@ -207,6 +203,7 @@ footer > div{
     align-items: center;
     justify-content: space-evenly;
 }
+
 @media (max-width:770px) {
     .title{
         grid-area: 4 / 1 / 5 / 7;
